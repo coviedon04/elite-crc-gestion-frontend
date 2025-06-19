@@ -2,15 +2,5 @@
   <h1>
     ¡Bienvenido al frontend de Elite CRC Taekwondo!
   </h1>
-  <div *ngIf="errorMessage" style="color: red;">
-    {{ errorMessage }}
-</div>
-
-<ul *ngIf="atletas.length > 0">
-    <li *ngFor="let atleta of atletas">
-        {{ atleta.nombre }} {{ atleta.apellidos }} ({{ atleta.categoria }})
-    </li>
-</ul>
-
-<p *ngIf="atletas.length === 0 && !errorMessage">No hay atletas para mostrar.</p>
+  <app-atletas></app-atletas>
 </div>

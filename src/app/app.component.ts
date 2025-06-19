@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AtletasComponent } from './atletas/atletas.component';
 
 @Component({
   selector: 'app-root',

@@ -16,7 +16,7 @@ export class AtletasComponent implements OnInit {
     const token = localStorage.getItem('token');
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
 
-    this.http.get<any[]>('https://localhost:3000/api/clientes/D92ECA8E-06F2-4F1B-BAEE-8EC42CEC6BD7/atletas', { headers })
+    this.http.get<any[]>('https://localhost:3000/api/clientes/4A64E3F5-EC8E-4A9F-9F68-11E00474232F/atletas', { headers })
       .subscribe({
         next: (data) => {
           this.atletas = data;

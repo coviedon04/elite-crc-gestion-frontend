@@ -7,14 +7,14 @@ import { AtletasComponent } from './atletas/atletas.component';
 
 @NgModule({
   declarations: [
-    AppComponent, //lo marca como error
-    AtletasComponent //lo marca como error
+    AppComponent,
+    AtletasComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent] //lo marca como error
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
