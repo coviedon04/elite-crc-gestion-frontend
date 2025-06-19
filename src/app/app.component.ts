@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { AtletasComponent } from './atletas/atletas.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'elite-crc-gestion-frontend';
+  errorMessage: string = '';
+  atletas: any[] = [];
 }
